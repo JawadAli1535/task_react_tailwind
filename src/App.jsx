@@ -1,12 +1,15 @@
 import { useState } from 'react';
+import UserProfile from './components/userProfile';
+import Posts from './components/posts';
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">React Task Jawad</h1>
-    </>
+    <div className="w-[70%] h-auto flex items-center flex-col justify-center mx-auto border my-28">
+      <UserProfile />
+      <Posts />
+    </div>
   );
 }
 
